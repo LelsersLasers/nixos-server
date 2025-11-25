@@ -29,8 +29,8 @@
   # Ignore lid close when plugged in
   services.logind = {
     lidSwitchExternalPower = "ignore";
-    lidSwitchDocked = "ignore";
-    lidSwitch = "suspend";
+    settings.Login.HandleLidSwitchDocked = "ignore";
+    settings.Login.HandleLidSwitch = "suspend";
   };
 
   # Set your time zone.
@@ -193,8 +193,8 @@
     # git/gh
     programs.git = {
       enable = true;
-      userName = "<name>";
-      userEmail = "<email>";
+      settings.user.name = "<name>";
+      settings.user.email = "<email>";
       signing = {
         key = "<key>";
         signByDefault = true;
