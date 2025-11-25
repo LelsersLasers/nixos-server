@@ -310,11 +310,11 @@ in
     enable = true;
     port = 3011;
     loadModels = [
-      "qwen2.5:0.5b"
+      "qwen3:0.6b"
       "deepseek-r1:1.5b"
       "deepseek-r1:7b"
       "gemma3:4b"
-      "qwen2.5vl:7b"
+      "qwen3-vl:8b"
     ];
   };
   # ollama open-webui
