@@ -33,6 +33,13 @@ in
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Ignore lid close when plugged in
+  services.logind = {
+    lidSwitchExternalPower = "ignore";
+    lidSwitchDocked = "ignore";
+    lidSwitch = "suspend";
+  };
+
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
